@@ -11,7 +11,7 @@ import styles from "./index.module.css";
 function StatsBar(): ReactNode {
   const stats = [
     { value: "200+", label: "精選關係卡牌" },
-    { value: "6+", label: "使用情境類型" },
+    { value: "8+", label: "使用情境類型" },
     { value: "抽卡", label: "自然破冰對話" },
     { value: "收藏", label: "珍藏最愛卡牌" },
     { value: "iOS & Android", label: "免費下載" },
