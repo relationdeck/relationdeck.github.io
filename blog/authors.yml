@@ -1,0 +1,21 @@
+relationdeck:
+  name: RelationDeck 關係盒子
+  title: 關係卡牌 App
+  url: https://www.relationdeck.com
+  image_url: https://github.com/relationdeck.png
+  page: true
+  socials:
+    instagram: relationdeck
+    website: https://www.relationdeck.com
+
+kdchang:
+  name: KD Chang
+  title: Founder of RelationDeck
+  url: https://www.kdchang.net
+  image_url: https://github.com/kdchang.png
+  page: true
+  socials:
+    x: kaidichang
+    github: kdchang
+    instagram: kdchang_net
+    website: https://www.kdchang.net

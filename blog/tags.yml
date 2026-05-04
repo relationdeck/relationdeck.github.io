@@ -1,0 +1,44 @@
+關係:
+  label: 關係
+  permalink: /關係
+  description: 關係建立與經營相關文章
+
+對話:
+  label: 對話
+  permalink: /對話
+  description: 深度對話技巧與實踐
+
+破冰:
+  label: 破冰
+  permalink: /破冰
+  description: 認識新朋友、打破尷尬的技巧
+
+卡牌:
+  label: 卡牌
+  permalink: /卡牌
+  description: RelationDeck 卡牌使用心得
+
+情侶:
+  label: 情侶
+  permalink: /情侶
+  description: 伴侶關係深化與溝通
+
+家庭:
+  label: 家庭
+  permalink: /家庭
+  description: 家庭溝通與親子關係
+
+職場:
+  label: 職場
+  permalink: /職場
+  description: 職場人際關係與團隊溝通
+
+心理:
+  label: 心理
+  permalink: /心理
+  description: 心理健康與自我探索
+
+RelationDeck:
+  label: RelationDeck
+  permalink: /relationdeck
+  description: RelationDeck 關係盒子相關文章

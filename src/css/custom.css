@@ -1,0 +1,370 @@
+/**
+ * RelationDeck 關係盒子 — Warm Connection Design System
+ * Rose: #B97A84 | Sage: #8FA684 | Parchment: #F5EDE4
+ *
+ * Palette derived from the logo:
+ *   front card  → dusty rose  #C9909A
+ *   back card   → sage green  #93A98E
+ *   background  → warm cream  #EFE9E3
+ *   shadow      → dark moss   #3D4A40
+ */
+
+/* ── Infima Design Tokens (light mode defaults) ── */
+:root {
+  --ifm-color-primary: #b87280;
+  --ifm-color-primary-dark: #a6626f;
+  --ifm-color-primary-darker: #9a5a67;
+  --ifm-color-primary-darkest: #7e4a55;
+  --ifm-color-primary-light: #c88290;
+  --ifm-color-primary-lighter: #d0909d;
+  --ifm-color-primary-lightest: #dda8b3;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(184, 114, 128, 0.12);
+
+  /* Brand tokens */
+  --rd-bg-base: #f5ede4;
+  --rd-bg-surface: #fdf8f4;
+  --rd-bg-card: #ffffff;
+  --rd-rose: #b97a84;
+  --rd-rose-dark: #9a6270;
+  --rd-rose-pale: #f0d8dc;
+  --rd-sage: #8fa684;
+  --rd-sage-dark: #6d8a63;
+  --rd-sage-pale: #d4e8ce;
+  --rd-dark: #3d4a40;
+  --rd-border: rgba(185, 122, 132, 0.18);
+  --rd-border-hover: rgba(185, 122, 132, 0.5);
+  --rd-glow: 0 0 24px rgba(185, 122, 132, 0.22);
+  --rd-text-primary: #2c2a28;
+  --rd-text-muted: #847e7a;
+  --rd-shadow-soft: 0 4px 20px rgba(61, 74, 64, 0.07);
+  --rd-shadow-card: 0 8px 32px rgba(61, 74, 64, 0.1);
+  --rd-radius: 16px;
+
+  /* Override Infima layout colours */
+  --ifm-background-color: var(--rd-bg-base);
+  --ifm-background-surface-color: var(--rd-bg-surface);
+  --ifm-color-content: var(--rd-text-primary);
+  --ifm-heading-color: var(--rd-text-primary);
+  --ifm-link-color: var(--rd-rose);
+  --ifm-link-hover-color: var(--rd-rose-dark);
+  --ifm-navbar-background-color: rgba(253, 248, 244, 0.97);
+  --ifm-footer-background-color: #2c2a28;
+  --ifm-card-background-color: var(--rd-bg-card);
+  --ifm-toc-border-color: var(--rd-border);
+  --ifm-color-emphasis-300: rgba(185, 122, 132, 0.2);
+  --ifm-color-emphasis-700: var(--rd-text-muted);
+}
+
+/* ── Dark mode: warm charcoal variant ── */
+[data-theme="dark"] {
+  --ifm-color-primary: #c9909a;
+  --ifm-color-primary-dark: #b87a84;
+  --ifm-color-primary-darker: #a86878;
+  --ifm-color-primary-darkest: #8c5060;
+  --ifm-color-primary-light: #d9a0aa;
+  --ifm-color-primary-lighter: #e0b0b8;
+  --ifm-color-primary-lightest: #edcace;
+
+  --rd-bg-base: #1c1917;
+  --rd-bg-surface: #232120;
+  --rd-bg-card: #2a2725;
+  --rd-text-primary: #f0ece8;
+  --rd-text-muted: #8a8480;
+  --rd-border: rgba(201, 144, 154, 0.18);
+  --rd-border-hover: rgba(201, 144, 154, 0.5);
+  --rd-glow: 0 0 24px rgba(201, 144, 154, 0.22);
+  --rd-shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.3);
+  --rd-shadow-card: 0 8px 32px rgba(0, 0, 0, 0.4);
+
+  --ifm-background-color: var(--rd-bg-base);
+  --ifm-background-surface-color: var(--rd-bg-surface);
+  --ifm-navbar-background-color: rgba(28, 25, 23, 0.97);
+  --ifm-footer-background-color: #161412;
+  --ifm-card-background-color: var(--rd-bg-card);
+  --ifm-color-content: var(--rd-text-primary);
+  --ifm-heading-color: var(--rd-text-primary);
+  --docusaurus-highlighted-code-line-bg: rgba(201, 144, 154, 0.15);
+}
+
+/* ── Global body ── */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Navbar ── */
+/*
+ * backdrop-filter MUST live on .navbar__inner, NOT on .navbar itself.
+ * Applying backdrop-filter to .navbar creates a new containing block for
+ * position:fixed children (including .navbar-sidebar), which traps the
+ * mobile drawer inside the sticky navbar bar and makes menu items unclickable.
+ */
+.navbar {
+  border-bottom: 1px solid var(--rd-border);
+  box-shadow: none;
+}
+
+.navbar__inner {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Keep the mobile sidebar fully opaque so it looks right */
+.navbar-sidebar {
+  background-color: var(--rd-bg-surface) !important;
+}
+
+.navbar__title {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--rd-text-primary);
+}
+
+.navbar__link {
+  font-weight: 500;
+  color: var(--rd-text-muted);
+  transition: color 0.2s;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  color: var(--rd-rose) !important;
+}
+
+/* Navbar CTA download button */
+.navbar__item.navbar__download-cta .navbar__link {
+  background: linear-gradient(135deg, var(--rd-rose), var(--rd-rose-dark));
+  color: #ffffff !important;
+  font-weight: 700;
+  padding: 0.4rem 1.1rem;
+  border-radius: 10px;
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.navbar__item.navbar__download-cta .navbar__link:hover {
+  box-shadow: 0 4px 20px rgba(185, 122, 132, 0.45);
+  transform: translateY(-1px);
+  color: #ffffff !important;
+}
+
+/* ── Hero ── */
+.hero {
+  background: var(--rd-bg-base);
+  color: var(--rd-text-primary);
+}
+
+.hero__title {
+  color: var(--rd-text-primary) !important;
+  text-shadow: none !important;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.hero__subtitle {
+  color: var(--rd-text-muted) !important;
+  text-shadow: none !important;
+}
+
+/* Primary CTA: rose gradient */
+.hero .button--success {
+  background: linear-gradient(
+    135deg,
+    var(--rd-rose),
+    var(--rd-rose-dark)
+  ) !important;
+  border-color: transparent !important;
+  color: #ffffff !important;
+  font-weight: 700;
+  box-shadow: 0 4px 20px rgba(185, 122, 132, 0.38);
+  transition:
+    box-shadow 0.25s ease,
+    transform 0.2s ease;
+}
+
+.hero .button--success:hover {
+  box-shadow: 0 6px 30px rgba(185, 122, 132, 0.58);
+  transform: translateY(-2px);
+}
+
+/* Secondary CTA: sage outlined */
+.hero .button--secondary {
+  background-color: transparent !important;
+  border: 1.5px solid var(--rd-sage) !important;
+  color: var(--rd-sage-dark) !important;
+  font-weight: 600;
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.hero .button--secondary:hover {
+  background-color: rgba(143, 166, 132, 0.12) !important;
+  box-shadow: 0 0 20px rgba(143, 166, 132, 0.3);
+}
+
+/* ── Footer ── */
+.footer {
+  background-color: var(--ifm-footer-background-color);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer__title {
+  color: var(--rd-rose);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.footer__link-item {
+  color: #a09890;
+  transition: color 0.2s;
+}
+
+.footer__link-item:hover {
+  color: var(--rd-rose);
+}
+
+.footer__copyright {
+  color: #9a9290;
+}
+
+/* ── Stats Bar ── */
+.ct-stats-bar {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  padding: 2.5rem 1rem;
+  background: var(--rd-bg-surface);
+  border-bottom: 1px solid var(--rd-border);
+}
+
+.ct-stat-item {
+  text-align: center;
+}
+
+.ct-stat-value {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  background: linear-gradient(
+    135deg,
+    var(--rd-rose) 0%,
+    #c9909a 50%,
+    var(--rd-sage) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.ct-stat-label {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--rd-text-muted);
+  margin-top: 0.35rem;
+  letter-spacing: 0.01em;
+}
+
+/* ── Section Badge ── */
+.ct-section-badge {
+  display: inline-block;
+  padding: 0.25rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(185, 122, 132, 0.1);
+  border: 1px solid rgba(185, 122, 132, 0.3);
+  color: var(--rd-rose-dark);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+/* ── Newsletter / CTA Section ── */
+.ct-newsletter-wrap {
+  padding: 4.5rem 1rem;
+  background: var(--rd-bg-base);
+  border-top: 1px solid var(--rd-border);
+  text-align: center;
+}
+
+.ct-newsletter-section-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--rd-text-primary);
+  margin-bottom: 0.4rem;
+}
+
+.ct-newsletter-section-sub {
+  font-size: 0.95rem;
+  color: var(--rd-text-muted);
+  margin-bottom: 1.75rem;
+}
+
+.ct-newsletter-wrap iframe {
+  border: 1px solid var(--rd-border) !important;
+  border-radius: 14px !important;
+  background: var(--rd-bg-card) !important;
+  max-width: 680px;
+  margin: 0 auto;
+  display: block;
+  box-shadow: var(--rd-shadow-soft);
+}
+
+/* ── Responsive ── */
+@media screen and (max-width: 768px) {
+  .ct-stats-bar {
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+  }
+
+  .ct-stat-value {
+    font-size: 1.5rem;
+  }
+}
+
+/* ── Blog ── */
+/* Blog list: post title links */
+.blog-list-page article h2 {
+  font-size: 2.2rem !important;
+  line-height: 1.4;
+}
+
+/* Blog post page: main heading */
+.blog-post-page article header h1 {
+  font-size: clamp(1.5rem, 3.5vw, 2rem) !important;
+  line-height: 1.35;
+}
+
+/* ── Sidebar ── */
+.menu__link--active {
+  color: var(--rd-rose) !important;
+}
+
+/* ── Table of contents ── */
+.table-of-contents__link--active {
+  color: var(--rd-rose);
+  font-weight: 600;
+}
+
+/* ── Scrollbar tinting (webkit) ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--rd-bg-surface);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(185, 122, 132, 0.35);
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(185, 122, 132, 0.55);
+}
