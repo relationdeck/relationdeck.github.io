@@ -33,7 +33,7 @@ RelationDeck 關係盒子是一款關係對話卡牌 App，讓你透過隨機抽
 
 ## 聯絡我們
 
-如有任何建議、合作邀約，[歡迎來信]((mailto:relationdeck@gmail.com))
+如有任何建議、合作邀約，[歡迎來信](mailto:relationdeck@gmail.com)
 
 或加入我們的交流社群：
 [Facebook 社群](https://facebook.com/groups/relationdeck) ｜ [Instagram](https://www.instagram.com/relationdeck)
