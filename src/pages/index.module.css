@@ -52,9 +52,10 @@
 
 .heroInner {
   display: grid;
-  grid-template-columns: 1.15fr 1fr;
+  grid-template-columns: minmax(0, 34rem) 400px;
+  justify-content: center;
   align-items: center;
-  gap: 4rem;
+  gap: 3rem;
 }
 
 .eyebrow {
@@ -121,7 +122,7 @@
   height: 380px;
   max-width: 400px;
   width: 100%;
-  justify-self: center;
+  justify-self: start;
 }
 
 .cardBack,
@@ -495,6 +496,7 @@
   }
 
   .heroVisual {
+    justify-self: center;
     height: 320px;
     max-width: 340px;
   }

@@ -92,7 +92,7 @@ function Facts(): ReactNode {
     { value: "8", label: "種關係情境" },
     { value: "120", label: "張對話卡" },
     { value: "3", label: "層對話深度" },
-    { value: "0", label: "需要註冊的帳號" },
+    { value: "2", label: "種語言（中文／英文）" },
   ];
   return (
     <div className={styles.facts}>
