@@ -246,6 +246,47 @@ function Privacy(): ReactNode {
   );
 }
 
+const newsletterPoints = [
+  "App 上架當天，第一時間通知你",
+  "新文章與對話主題，寄到你的信箱",
+  "完全免費，隨時可以取消訂閱",
+];
+
+function Newsletter(): ReactNode {
+  return (
+    <section
+      id="newsletter"
+      className={`${styles.section} ${styles.sectionAlt}`}
+    >
+      <div className={`container ${styles.newsletterInner}`}>
+        <div>
+          <span className={styles.newsletterIcon}>
+            <Icon name="mail" size={22} />
+          </span>
+          <Heading as="h2">免費訂閱電子報</Heading>
+          <p className={styles.newsletterLead}>
+            留下 email，就能收到 RelationDeck 的最新消息。
+          </p>
+          <ul className={styles.newsletterPoints}>
+            {newsletterPoints.map((point) => (
+              <li key={point}>{point}</li>
+            ))}
+          </ul>
+        </div>
+        <iframe
+          className={styles.newsletter}
+          src="https://relationdeck.substack.com/embed"
+          title="訂閱 RelationDeck 電子報"
+          width="100%"
+          height="320"
+          frameBorder="0"
+          scrolling="no"
+        />
+      </div>
+    </section>
+  );
+}
+
 function Download(): ReactNode {
   return (
     <section className={`${styles.section} ${styles.download}`}>
@@ -253,7 +294,7 @@ function Download(): ReactNode {
         <SectionHead
           id="download"
           title="即將上架 App Store 與 Google Play"
-          lead="訂閱電子報，上架當天會通知你。也歡迎加入 Facebook 社群，提供題目與使用回饋。"
+          lead="上架當天會透過電子報通知訂閱者。也歡迎加入 Facebook 社群，提供題目與使用回饋。"
         />
         <div className={styles.stores}>
           <span className={styles.store}>
@@ -267,15 +308,6 @@ function Download(): ReactNode {
             <em>即將上架</em>
           </span>
         </div>
-        <iframe
-          className={styles.newsletter}
-          src="https://relationdeck.substack.com/embed"
-          title="訂閱 RelationDeck 電子報"
-          width="100%"
-          height="320"
-          frameBorder="0"
-          scrolling="no"
-        />
       </div>
     </section>
   );
@@ -295,6 +327,7 @@ export default function Home(): ReactNode {
         <Levels />
         <Features />
         <Privacy />
+        <Newsletter />
         <Download />
       </main>
     </Layout>

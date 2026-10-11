@@ -450,15 +450,10 @@
   justify-content: center;
 }
 
-.download .newsletter {
-  margin: 0 auto;
-}
-
 .stores {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  margin-bottom: 2.5rem;
 }
 
 .store {
@@ -480,9 +475,62 @@
   color: var(--rd-muted);
 }
 
+/* ── Newsletter ── */
+.newsletterInner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: 4rem;
+}
+
+.newsletterIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--rd-rose-soft);
+  color: var(--rd-rose-ink);
+  margin-bottom: 1.25rem;
+}
+
+.newsletterInner h2 {
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  margin-bottom: 0.75rem;
+}
+
+.newsletterLead {
+  color: var(--rd-muted);
+  margin-bottom: 1.5rem;
+}
+
+.newsletterPoints {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.newsletterPoints li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin-bottom: 0.6rem;
+  color: var(--rd-ink-soft);
+}
+
+.newsletterPoints li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--rd-sage);
+}
+
 .newsletter {
   display: block;
-  max-width: 680px;
   border: 1px solid var(--rd-line);
   border-radius: 12px;
   background: #fff;
@@ -493,6 +541,11 @@
   .heroInner {
     grid-template-columns: 1fr;
     gap: 3rem;
+  }
+
+  .newsletterInner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
   }
 
   .heroVisual {
