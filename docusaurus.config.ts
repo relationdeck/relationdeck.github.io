@@ -6,7 +6,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "RelationDeck 關係盒子",
-  tagline: "抽一張卡，開啟一段真實對話",
+  tagline: "抽一張卡，開啟真實對話、建立深度連結",
   favicon: "/img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -35,6 +35,24 @@ const config: Config = {
     defaultLocale: "zh-Hant",
     locales: ["zh-Hant"],
   },
+
+  headTags: [
+    {
+      tagName: "link",
+      attributes: { rel: "preconnect", href: "https://fonts.googleapis.com" },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossorigin: "anonymous",
+      },
+    },
+  ],
+  stylesheets: [
+    "https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700&display=swap",
+  ],
 
   presets: [
     [
@@ -127,8 +145,8 @@ const config: Config = {
           position: "left",
         },
         {
-          href: "#",
-          label: "立即下載",
+          to: "/#download",
+          label: "下載 App",
           position: "right",
           className: "navbar__download-cta",
         },
@@ -152,21 +170,25 @@ const config: Config = {
               label: "關於我們",
               to: "/about",
             },
+            {
+              label: "隱私權政策",
+              to: "/privacy",
+            },
           ],
         },
         {
-          title: "關係社群",
+          title: "社群",
           items: [
             {
-              label: "Facebook 關係盒子交流社群",
+              label: "Facebook 社群",
               href: "https://facebook.com/groups/relationdeck",
             },
             {
-              label: "追蹤 Instagram",
+              label: "Instagram",
               href: "https://www.instagram.com/relationdeck",
             },
             {
-              label: "追蹤 Facebook",
+              label: "Facebook 粉絲專頁",
               href: "https://www.facebook.com/relationdeck",
             },
           ],
@@ -175,20 +197,20 @@ const config: Config = {
           title: "下載 App",
           items: [
             {
-              label: "App Store (即將上線)",
-              href: "#",
+              label: "App Store（即將上架）",
+              to: "/#download",
             },
             {
-              label: "Google Play (即將上線)",
-              href: "#",
+              label: "Google Play（即將上架）",
+              to: "/#download",
             },
           ],
         },
         {
-          title: "聯絡我們",
+          title: "聯絡",
           items: [
             {
-              label: "發送信件",
+              label: "聯絡信箱",
               to: "mailto:relationdeck@gmail.com",
             },
           ],

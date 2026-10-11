@@ -1,87 +1,82 @@
 ---
-title: Privacy Policy
+title: 隱私權政策
+description: RelationDeck 關係盒子 App 與官網如何處理你的資料。
 slug: /privacy
 ---
 
-# Privacy Policy
+# 隱私權政策
 
-**Effective date:** 2025-12-16
+**生效日期：** 2026 年 10 月 11 日
 
-relationdeck ("we", "our", or "us") respects your privacy. This Privacy Policy explains how our Chrome Extension and website collect, use, and store your data.
+本政策說明 RelationDeck 關係盒子（以下稱「我們」）的 iOS 與 Android App（以下稱「App」），以及官網 www.relationdeck.com（以下稱「官網」）如何處理你的資料。
 
----
+## 1. 摘要
 
-## 1. Single Purpose
+- App 不需要註冊帳號，也不要求你提供姓名、Email 或電話。
+- 你在 App 中建立的內容（收藏、筆記、對話者、抽卡紀錄與設定）只儲存在你的裝置上，預設不會上傳到我們或任何第三方的伺服器。
+- App 不包含廣告、數據分析或追蹤工具。
+- 我們不販售、出租或分享任何使用者資料。
 
-relationdeck is designed to help users save job postings and learning resources from multiple platforms with one click, and organize their job search progress and career learning in a structured, privacy-first way using local storage.
+## 2. 儲存在你裝置上的資料
 
-We do not collect any personal data beyond what is required for this single purpose.
+使用 App 時，以下資料會儲存在你裝置的本機資料庫與 App 設定中：
 
----
+| 資料 | 內容 |
+|---|---|
+| 收藏 | 你收藏的卡片，以及每張卡片最近一次被抽到的時間 |
+| 筆記 | 你為卡片寫下的文字、建立與修改時間，以及標記的對話者 |
+| 對話者 | 你自行建立的名稱、表情符號、情境分類與備註 |
+| 抽卡紀錄 | 每次翻開卡片的時間與日期，用於計算連續天數與對話月曆 |
+| 設定 | 介面語言、每日提醒的開關、時間與主題 |
 
-## 2. Data We Collect
+這些資料只會被 App 用來提供上述功能。我們無法存取、讀取或備份這些資料，因此也無法替你復原。
 
-We **do not collect personally identifiable information (PII)**, financial, health, or authentication information.
+「對話者」是你自行輸入的文字，可能包含他人的名字或相關描述。這些內容同樣只存在你的裝置上，請依你的判斷填寫。
 
-The only data processed by the extension are:
+## 3. App 的網路連線
 
-- **Web pages you explicitly save**
-  - Job postings from supported platforms (104, 1111, Yourator, Cake, LinkedIn, Indeed)
-  - Learning resources (YouTube, online courses, books, etc.)
+App 只會在以下兩種情況連上網路，且不會傳送任何你在 App 中建立的內容：
 
-- **Local notes and status**
-  - Application status (Saved → Applied → Interviewing → Offer / Rejected)
-  - User notes (interview notes, salary negotiation notes)
+**卡牌內容更新。** App 每 24 小時最多一次（或在你於設定中手動檢查更新時），向 `api.relationdeck.com` 下載最新的卡牌題目。這個請求不包含任何帳號、裝置識別碼或使用者資料。如同所有網路連線，提供服務的伺服器在技術上會收到你的 IP 位址與標準的連線資訊；我們不會用這些資訊識別你的身分。
 
-> All data is stored **locally in your browser**. Nothing is sent to external servers.
+**介面字型。** App 使用 Google Fonts 提供的字型，首次顯示時可能會從 Google 的伺服器下載字型檔。Google 對這類請求的處理方式，請參考 [Google 隱私權政策](https://policies.google.com/privacy)。
 
----
+沒有網路時，App 會使用內建的卡牌內容，所有功能照常運作。
 
-## 3. Permissions
+## 4. 通知與權限
 
-The extension uses the following permissions:
+**每日提醒** 預設為關閉。只有在你於設定中開啟時，App 才會請求通知權限。提醒由你的裝置在本機排程與發送，不經過任何推播伺服器。
 
-- **activeTab**: Access the currently active tab only when the user clicks the extension. Needed to extract job/resource information.
-- **tabs**: Retrieve tab title and URL to correctly identify content.
-- **storage**: Store bookmarks, progress, and notes locally.
-- **scripting**: Inject scripts on supported pages to extract relevant metadata.
-- **host_permissions**: Access supported platforms only when the user saves content.
+Android 版另外使用「開機後接收通知」權限（`RECEIVE_BOOT_COMPLETED`），用途是在裝置重新開機後恢復已排程的提醒。
 
-**Important:** All permissions are **user-initiated** and limited to the scope required for the extension's single purpose.
+App 不會存取你的通訊錄、相片、位置、麥克風或相機。
 
----
+## 5. 刪除資料
 
-## 4. Remote Code
+- 你可以隨時在 App 中刪除個別筆記或取消收藏。
+- 在「設定 → 資料 → 清除所有資料」中，可以一次刪除所有收藏、筆記、對話者與抽卡紀錄。語言與提醒等設定會保留。
+- 解除安裝 App 會刪除儲存在該裝置上的所有 App 資料。
 
-This extension **does not load or execute any remote JavaScript or WebAssembly**. All code is included in the extension package.
+由於我們的伺服器上沒有你的資料，因此不需要另外提出刪除請求。
 
----
+## 6. 官網
 
-## 5. Third-Party Sharing
+官網為靜態網站，不提供帳號註冊。瀏覽官網時，以下第三方服務可能會收集資料：
 
-We do **not sell or transfer user data to third parties**, except for the approved functionality of the extension.
+- **Google Tag Manager／Google Analytics**：用於了解網站的瀏覽情形，例如瀏覽的頁面與來源。相關資料由 Google 依其[隱私權政策](https://policies.google.com/privacy)處理。
+- **Google Fonts**：官網字型由 Google 的伺服器提供。
+- **Substack**：首頁的電子報訂閱表單由 Substack 提供。你在表單中填寫的 Email 會直接傳送給 Substack，並依 [Substack 隱私權政策](https://substack.com/privacy)處理。
 
-We do **not use or transfer data for purposes unrelated to the extension's single purpose**.
+你可以透過瀏覽器設定封鎖 Cookie，或使用 [Google Analytics 停用外掛程式](https://tools.google.com/dlpage/gaoptout)。
 
-We do **not use or transfer data to determine creditworthiness or for lending purposes**.
+## 7. 兒童隱私
 
----
+App 不會在知情的情況下收集任何人（包括兒童）的個人資料。由於 App 不要求個人資料，預設也不會上傳任何資料，所有內容都只存在使用者自己的裝置上。
 
-## 6. User Control
+## 8. 政策變更
 
-Users can:
+若本政策有所變更，我們會更新本頁內容與上方的生效日期。重大變更會在 App 或官網中另行說明。
 
-- Save or delete any bookmarked job or learning resource at any time.
-- Export data from local storage if needed.
-- Uninstall the extension to remove all locally stored data.
+## 9. 聯絡我們
 
----
-
-## 7. Contact Us
-
-If you have any questions about this Privacy Policy, please contact us at:
-
-**Email:** relationdeckm@gmail.com  
-**Website:** [https://www.relationdeck.com](https://www.relationdeck.com)
-
----
+如果你對本政策有任何疑問，請寄信至[聯絡信箱](mailto:relationdeck@gmail.com)。
