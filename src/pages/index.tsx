@@ -11,32 +11,36 @@ const decks: { icon: IconName; name: string; en: string; tagline: string }[] = [
   { icon: "sprout", name: "個人反思", en: "Self Reflection", tagline: "一個人靜下來，用問題問自己。" },
   { icon: "snowflake", name: "陌生破冰", en: "Icebreaker", tagline: "初次見面，不再只是寒暄。" },
   { icon: "users", name: "朋友聚會", en: "Friends", tagline: "一道好問題，勝過三小時的閒聊。" },
-  { icon: "coffee", name: "曖昧約會", en: "Dating", tagline: "讓一張卡替你開口，慢慢靠近彼此。" },
+  { icon: "coffee", name: "曖昧約會", en: "Dating", tagline: "不知道說什麼才好？讓一張卡替你開口。" },
   { icon: "heart", name: "伴侶深談", en: "Couples", tagline: "不只聊日常，而是聊心裡。" },
-  { icon: "house", name: "家庭時光", en: "Family", tagline: "少一點客套，多一點傾聽。" },
+  { icon: "sofa", name: "共同生活", en: "Life Together", tagline: "相愛容易，一起過日子要靠談。" },
+  { icon: "house", name: "子女對談", en: "Talk to Parents", tagline: "少一點客套，多一點傾聽。" },
+  { icon: "baby", name: "父母對談", en: "Talk to Kids", tagline: "不只問「今天乖不乖」。" },
+  { icon: "toyBrick", name: "手足對談", en: "Siblings", tagline: "同一個家長大，卻有不同的記憶。" },
   { icon: "briefcase", name: "職場交流", en: "Workplace", tagline: "不只是合作，而是理解彼此。" },
+  { icon: "graduationCap", name: "向上對談", en: "Managing Up", tagline: "不只是報告，而是了解帶領你的人。" },
   { icon: "messages", name: "下屬對話", en: "1-on-1", tagline: "不只是管理，而是建立信任。" },
 ];
 
 const steps = [
   { title: "選一副牌", body: "依照今天坐在對面的人，選擇對應的關係情境。" },
-  { title: "翻開，輪流回答", body: "點一下翻開卡片。同一輪不會抽到重複的題目，整副抽完再重新洗牌。" },
-  { title: "記下想留住的話", body: "收藏想再聊的卡，或為這一題寫下筆記，標記是和誰聊的。" },
+  { title: "翻開，輪流回答", body: "點一下翻開卡片，左滑換下一張、右滑回上一張。同一輪不會重複，整副抽完再重新洗牌。" },
+  { title: "記下想留住的話", body: "把想再聊的卡加入收藏，或為這一題寫下筆記，標記是和誰聊的。" },
 ];
 
 const levels = [
   { label: "輕鬆", deck: "曖昧約會", question: "你最近迷上什麼？" },
   { label: "深入", deck: "個人反思", question: "最近有什麼畫面，常常在你腦中重播？" },
-  { label: "深度", deck: "家庭時光", question: "有沒有一件你希望我知道關於你的事？" },
+  { label: "深度", deck: "子女對談", question: "有沒有一件你希望我知道關於你的事？" },
 ];
 
 const features: { icon: IconName; title: string; body: string }[] = [
-  { icon: "bookmark", title: "收藏", body: "收藏想再聊的卡片，下次直接從收藏開始。" },
+  { icon: "bookmark", title: "收藏", body: "點書籤收藏想再聊的卡片，下次直接從收藏開始。" },
   { icon: "pen", title: "筆記", body: "一張卡可以有多則筆記。同一題三個人回答，就記成三則，各自標記對象。" },
   { icon: "user", title: "對話者", body: "為常聊天的人建立名單，每個人的頁面會整理你們聊過的所有筆記。" },
-  { icon: "calendar", title: "紀錄", body: "連續天數與對話月曆，回頭查看哪一天聊了哪幾題。" },
+  { icon: "compass", title: "回顧", body: "整理近 30 天的對話：最常聊哪種關係、多半聊多深、哪些人好一陣子沒聊了。只描述，不打分數。" },
+  { icon: "calendar", title: "連續天數與月曆", body: "記錄連續聊了幾天，也能從月曆回頭查看哪一天聊了哪幾題。" },
   { icon: "bell", title: "每日提醒", body: "設定時間與主題，每天收到一道問題，點開通知就能直接聊。" },
-  { icon: "globe", title: "中英雙語", body: "介面與題目皆提供繁體中文與英文，可在設定中隨時切換。" },
 ];
 
 function Hero(): ReactNode {
@@ -53,7 +57,7 @@ function Hero(): ReactNode {
             建立深度連結
           </Heading>
           <p className={styles.heroLead}>
-            RelationDeck 關係盒子收錄 8 種關係情境、120
+            RelationDeck 關係盒子收錄 12 種關係情境、360
             道由淺入深的問題。把手機放在桌上，翻開一張，輪流回答，讓問題替你們開場。
           </p>
           <div className={styles.heroActions}>
@@ -89,8 +93,8 @@ function Hero(): ReactNode {
 
 function Facts(): ReactNode {
   const facts = [
-    { value: "8", label: "種關係情境" },
-    { value: "120", label: "張對話卡" },
+    { value: "12", label: "種關係情境" },
+    { value: "360", label: "張對話卡" },
     { value: "3", label: "層對話深度" },
     { value: "2", label: "種語言（中文／英文）" },
   ];
@@ -132,8 +136,8 @@ function Decks(): ReactNode {
     <section className={styles.section}>
       <div className="container">
         <SectionHead
-          title="八副牌，對應生活裡的八種關係"
-          lead="每副 15 張，從暖場的小問題，到平常不太會問出口的那一題。"
+          title="十二副牌，對應生活裡的十二種關係"
+          lead="從自己、朋友、伴侶到家人與職場，每副 30 張，從暖場的小問題，到平常不太會問出口的那一題。"
         />
         <ul className={styles.deckGrid}>
           {decks.map((d, i) => (
@@ -179,7 +183,7 @@ function Levels(): ReactNode {
       <div className="container">
         <SectionHead
           title="三個層次，循序漸進"
-          lead="每張卡都標示深度。可以從輕鬆的題目開始，氣氛對了再往下聊。"
+          lead="每張卡都標示深度。發牌時會先出輕鬆的題目，再慢慢進到深入與深度，不必自己挑。"
         />
         <div className={styles.levels}>
           {levels.map((l, i) => (
@@ -317,7 +321,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title="抽一張卡，開啟真實對話、建立深度連結"
-      description="RelationDeck 關係盒子是一款對話卡牌 App。8 種關係情境、120 道由淺入深的問題，陪你和朋友、伴侶、家人與同事開啟真實對話、建立深度連結。支援筆記、對話紀錄與每日提醒，資料預設只存在你的裝置上。"
+      description="RelationDeck 關係盒子是一款對話卡牌 App。12 種關係情境、360 道由淺入深的問題，陪你和朋友、伴侶、父母、孩子、手足與同事開啟真實對話、建立深度連結。支援筆記、對話回顧與每日提醒，資料預設只存在你的裝置上。"
     >
       <Hero />
       <Facts />
