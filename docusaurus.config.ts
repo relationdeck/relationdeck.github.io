@@ -4,9 +4,30 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+// 網站標題與標語不在翻譯檔的範圍內，依建置中的語系挑選。
+// Docusaurus 建置每個語系時會設定 DOCUSAURUS_CURRENT_LOCALE。
+const SITE_META: Record<string, { title: string; tagline: string }> = {
+  "zh-TW": {
+    title: "RelationDeck 關係盒子",
+    tagline: "抽一張卡，開啟真實對話、建立深度連結",
+  },
+  en: {
+    title: "RelationDeck",
+    tagline: "Draw a card. Start a real conversation.",
+  },
+};
+const currentLocale = process.env.DOCUSAURUS_CURRENT_LOCALE ?? "zh-TW";
+const siteMeta = SITE_META[currentLocale] ?? SITE_META["zh-TW"];
+
+// App Store 依語系導到對應的商店區域：中文版連台灣區，英文版連美國區。
+const APP_STORE_URL =
+  currentLocale === "en"
+    ? "https://apps.apple.com/us/app/relationdeck-%E9%97%9C%E4%BF%82%E7%9B%92%E5%AD%90/id6804240926"
+    : "https://apps.apple.com/tw/app/relationdeck-%E9%97%9C%E4%BF%82%E7%9B%92%E5%AD%90/id6804240926";
+
 const config: Config = {
-  title: "RelationDeck 關係盒子",
-  tagline: "抽一張卡，開啟真實對話、建立深度連結",
+  title: siteMeta.title,
+  tagline: siteMeta.tagline,
   favicon: "/img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -28,12 +49,15 @@ const config: Config = {
 
   onBrokenLinks: "throw",
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  // 預設語系 zh-TW 走根路徑 /，英文在 /en/ 底下。
+  // 翻譯檔在 i18n/<locale>/，新增字串後用 `npm run write-translations -- --locale en` 產生。
   i18n: {
-    defaultLocale: "zh-Hant",
-    locales: ["zh-Hant"],
+    defaultLocale: "zh-TW",
+    locales: ["zh-TW", "en"],
+    localeConfigs: {
+      "zh-TW": { label: "繁體中文", htmlLang: "zh-TW" },
+      en: { label: "English", htmlLang: "en" },
+    },
   },
 
   headTags: [
@@ -144,6 +168,7 @@ const config: Config = {
           label: "加入社群",
           position: "left",
         },
+        { type: "localeDropdown", position: "right" },
         {
           to: "/#download",
           label: "下載 App",
@@ -174,6 +199,10 @@ const config: Config = {
               label: "隱私權政策",
               to: "/privacy",
             },
+            {
+              label: "支援",
+              to: "/support",
+            },
           ],
         },
         {
@@ -197,8 +226,8 @@ const config: Config = {
           title: "下載 App",
           items: [
             {
-              label: "App Store（即將上架）",
-              to: "/#download",
+              label: "App Store",
+              href: APP_STORE_URL,
             },
             {
               label: "Google Play（即將上架）",
@@ -211,12 +240,18 @@ const config: Config = {
           items: [
             {
               label: "聯絡信箱",
-              to: "mailto:relationdeck@gmail.com",
+              href: "mailto:relationdeck@gmail.com",
             },
           ],
         },
+        {
+          // 畫成語言下拉選單，見 src/theme/Footer/LinkItem。
+          // label 與 `to` 只是設定格式要求的佔位，不會顯示。
+          title: "語言",
+          items: [{ label: "語言", to: "/", localeDropdown: true }],
+        },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} RelationDeck 關係盒子, Inc. Built with ❤️ by <a href="https://www.kdchang.com">KD Chang</a> in Taiwan.`,
+      copyright: `Copyright © ${new Date().getFullYear()} ${siteMeta.title}, Inc. Built with ❤️ by <a href="https://www.kdchang.com">KD Chang</a> in Taiwan.`,
     },
     prism: {
       theme: prismThemes.github,

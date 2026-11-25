@@ -1,0 +1,44 @@
+關係:
+  label: Relationships
+  permalink: /relationships
+  description: Building and keeping relationships
+
+對話:
+  label: Conversation
+  permalink: /conversation
+  description: Deeper conversations, in practice
+
+破冰:
+  label: Icebreakers
+  permalink: /icebreakers
+  description: Meeting new people and getting past the awkward start
+
+卡牌:
+  label: Cards
+  permalink: /cards
+  description: Using the RelationDeck cards
+
+伴侶:
+  label: Couples
+  permalink: /couples
+  description: Communication and closeness between partners
+
+家庭:
+  label: Family
+  permalink: /family
+  description: Family conversations, parents and children
+
+職場:
+  label: Work
+  permalink: /work
+  description: Relationships and communication at work
+
+心理:
+  label: Wellbeing
+  permalink: /wellbeing
+  description: Mental health and self-reflection
+
+RelationDeck:
+  label: RelationDeck
+  permalink: /relationdeck
+  description: Posts about RelationDeck

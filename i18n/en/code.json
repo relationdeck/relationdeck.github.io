@@ -1,0 +1,652 @@
+{
+  "homepage.deck.reflection.name": {
+    "message": "Self Reflection"
+  },
+  "homepage.deck.reflection.tagline": {
+    "message": "Sit with yourself, and ask."
+  },
+  "homepage.deck.stranger.name": {
+    "message": "Icebreaker"
+  },
+  "homepage.deck.stranger.tagline": {
+    "message": "First meetings, beyond small talk."
+  },
+  "homepage.deck.friend.name": {
+    "message": "Friends"
+  },
+  "homepage.deck.friend.tagline": {
+    "message": "One good question beats three hours of chit-chat."
+  },
+  "homepage.deck.dating.name": {
+    "message": "Dating"
+  },
+  "homepage.deck.dating.tagline": {
+    "message": "Not sure what to say? Let a card speak first."
+  },
+  "homepage.deck.partner.name": {
+    "message": "Couples"
+  },
+  "homepage.deck.partner.tagline": {
+    "message": "Not just the day. What's underneath it."
+  },
+  "homepage.deck.household.name": {
+    "message": "Life Together"
+  },
+  "homepage.deck.household.tagline": {
+    "message": "Love is the easy part. Living together takes talking."
+  },
+  "homepage.deck.family.name": {
+    "message": "Talk to Parents"
+  },
+  "homepage.deck.family.tagline": {
+    "message": "Less politeness. More listening."
+  },
+  "homepage.deck.parenting.name": {
+    "message": "Talk to Kids"
+  },
+  "homepage.deck.parenting.tagline": {
+    "message": "More than “were you good today?”"
+  },
+  "homepage.deck.sibling.name": {
+    "message": "Siblings"
+  },
+  "homepage.deck.sibling.tagline": {
+    "message": "Same home, different memories."
+  },
+  "homepage.deck.colleague.name": {
+    "message": "Workplace"
+  },
+  "homepage.deck.colleague.tagline": {
+    "message": "Not just working together. Understanding each other."
+  },
+  "homepage.deck.upward.name": {
+    "message": "Managing Up"
+  },
+  "homepage.deck.upward.tagline": {
+    "message": "Not just reporting. Knowing who leads you."
+  },
+  "homepage.deck.subordinate.name": {
+    "message": "1-on-1"
+  },
+  "homepage.deck.subordinate.tagline": {
+    "message": "Not managing. Building trust."
+  },
+  "homepage.steps.pick.title": {
+    "message": "Pick a deck"
+  },
+  "homepage.steps.pick.body": {
+    "message": "Choose the relationship that fits whoever is sitting across from you today."
+  },
+  "homepage.steps.flip.title": {
+    "message": "Flip it, take turns"
+  },
+  "homepage.steps.flip.body": {
+    "message": "Tap to turn a card over. Swipe left for the next one, right to go back. No repeats in a round — the deck reshuffles once you've been through it all."
+  },
+  "homepage.steps.keep.title": {
+    "message": "Keep what was said"
+  },
+  "homepage.steps.keep.body": {
+    "message": "Save a card you want to come back to, or write a note on it and tag who you talked with."
+  },
+  "homepage.levels.light": {
+    "message": "Light"
+  },
+  "homepage.levels.light.question": {
+    "message": "What have you been obsessed with lately?"
+  },
+  "homepage.levels.deeper": {
+    "message": "Deeper"
+  },
+  "homepage.levels.deeper.question": {
+    "message": "What moment keeps replaying in your head?"
+  },
+  "homepage.levels.deep": {
+    "message": "Deepest"
+  },
+  "homepage.levels.deep.question": {
+    "message": "What's something about you you wish I knew?"
+  },
+  "homepage.features.favorites.title": {
+    "message": "Saved"
+  },
+  "homepage.features.favorites.body": {
+    "message": "Tap the bookmark on a card you want to come back to, and start there next time."
+  },
+  "homepage.features.notes.title": {
+    "message": "Notes"
+  },
+  "homepage.features.notes.body": {
+    "message": "A card can hold several notes. Three people answer the same question, that's three notes, each tagged with who said it."
+  },
+  "homepage.features.partners.title": {
+    "message": "People"
+  },
+  "homepage.features.partners.body": {
+    "message": "Keep a list of the people you talk with. Each one's page gathers every note from your conversations."
+  },
+  "homepage.features.review.title": {
+    "message": "Review"
+  },
+  "homepage.features.review.body": {
+    "message": "A look back at the last 30 days: which relationships you talked about most, how deep you usually went, and who you haven't talked with in a while. It describes — it never scores."
+  },
+  "homepage.features.streak.title": {
+    "message": "Streak & calendar"
+  },
+  "homepage.features.streak.body": {
+    "message": "See how many days in a row you've talked, and look back on the calendar at which questions came up on which day."
+  },
+  "homepage.features.reminder.title": {
+    "message": "Daily reminder"
+  },
+  "homepage.features.reminder.body": {
+    "message": "Pick a time and a topic, get one question a day, and tap the notification to start talking."
+  },
+  "homepage.hero.eyebrow": {
+    "message": "Conversation card app · iOS / Android"
+  },
+  "homepage.hero.titleLine1": {
+    "message": "Draw a card,"
+  },
+  "homepage.hero.titleLine2": {
+    "message": "start a real conversation,"
+  },
+  "homepage.hero.titleLine3": {
+    "message": "get closer"
+  },
+  "homepage.hero.lead": {
+    "message": "RelationDeck holds 12 relationship decks and 360 questions that go from light to deep. Put the phone on the table, flip a card, take turns answering, and let the question get you started."
+  },
+  "homepage.hero.download": {
+    "message": "Get the app"
+  },
+  "homepage.hero.readBlog": {
+    "message": "Read the blog"
+  },
+  "homepage.facts.decks": {
+    "message": "relationship decks"
+  },
+  "homepage.facts.cards": {
+    "message": "conversation cards"
+  },
+  "homepage.facts.levels": {
+    "message": "levels of depth"
+  },
+  "homepage.facts.languages": {
+    "message": "languages (Chinese / English)"
+  },
+  "homepage.decks.title": {
+    "message": "Twelve decks for twelve relationships in your life"
+  },
+  "homepage.decks.lead": {
+    "message": "From yourself, friends and partners to family and work. Thirty cards each, from easy warm-ups to the question you'd never usually ask."
+  },
+  "homepage.steps.title": {
+    "message": "How it works"
+  },
+  "homepage.steps.lead": {
+    "message": "Nothing to prepare. Open it and start."
+  },
+  "homepage.levels.title": {
+    "message": "Three levels, one step at a time"
+  },
+  "homepage.levels.lead": {
+    "message": "Every card is marked with its depth. Light questions come first, then Deeper and Deepest — you don't have to choose."
+  },
+  "homepage.features.title": {
+    "message": "What you talked about stays with you"
+  },
+  "homepage.features.lead": {
+    "message": "Beyond drawing cards, the app keeps every conversation in order."
+  },
+  "homepage.privacy.title": {
+    "message": "Your conversations stay on your phone"
+  },
+  "homepage.privacy.body": {
+    "message": "RelationDeck needs no account. Saved cards, notes and history are stored only on your device and are not uploaded to any server by default. Every card works offline, too."
+  },
+  "homepage.newsletter.point.android": {
+    "message": "Be the first to know when the Android app launches"
+  },
+  "homepage.newsletter.point.articles": {
+    "message": "New articles and conversation topics in your inbox"
+  },
+  "homepage.newsletter.point.free": {
+    "message": "Completely free — unsubscribe any time"
+  },
+  "homepage.newsletter.title": {
+    "message": "Subscribe to the newsletter"
+  },
+  "homepage.newsletter.lead": {
+    "message": "Leave your email to get the latest from RelationDeck. (The newsletter is written in Traditional Chinese.)"
+  },
+  "homepage.newsletter.iframeTitle": {
+    "message": "Subscribe to the RelationDeck newsletter"
+  },
+  "homepage.download.title": {
+    "message": "Now on the App Store"
+  },
+  "homepage.download.lead": {
+    "message": "Download it for iPhone today — the app switches between English and Traditional Chinese. The Android version is coming soon to Google Play; newsletter subscribers will hear the day it launches."
+  },
+  "homepage.download.comingSoon": {
+    "message": "Coming soon"
+  },
+  "homepage.meta.title": {
+    "message": "Draw a card. Start a real conversation."
+  },
+  "homepage.meta.description": {
+    "message": "RelationDeck is a conversation card app. 12 relationship decks and 360 questions that go from light to deep help you have real conversations with friends, partners, parents, kids, siblings and colleagues. With notes, a look back at your conversations and a daily reminder — your data stays on your device by default."
+  },
+  "footer.localeDropdown.ariaLabel": {
+    "message": "Choose language"
+  },
+  "navbar.localeDropdown.ariaLabel": {
+    "message": "Choose language"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "This page crashed.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Scroll back to top",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "Archive",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "Archive",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Blog list page navigation",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Newer entries",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Older entries",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "View all tags",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "system mode",
+    "description": "The name for the system color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "light mode",
+    "description": "The name for the light color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "dark mode",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Switch between dark and light mode (currently {mode})",
+    "description": "The ARIA label for the color mode toggle"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Blog post page navigation",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Newer post",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Older post",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Breadcrumbs",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 item|{count} items",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Docs pages",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Previous",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Next",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "One doc tagged|{count} docs tagged",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} with \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Version: {versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "This is unreleased documentation for {siteTitle} {versionLabel} version.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "This is documentation for {siteTitle} {versionLabel}, which is no longer actively maintained.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "For up-to-date documentation, see the {latestVersionLink} ({versionLabel}).",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "latest version",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Direct link to {heading}",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " on {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " by {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Last updated{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.common.editThisPage": {
+    "message": "Edit this page",
+    "description": "The link label to edit the current page"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Versions",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.NotFound.title": {
+    "message": "Page Not Found",
+    "description": "The title of the 404 page"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Tags:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Close",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.admonition.caution": {
+    "message": "caution",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.admonition.danger": {
+    "message": "danger",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "info",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.note": {
+    "message": "note",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "tip",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.warning": {
+    "message": "warning",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Blog recent posts navigation",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Expand sidebar category '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Collapse sidebar category '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(opens in new tab)",
+    "description": "The ARIA label for the external link icon"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Languages",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.NotFound.p1": {
+    "message": "We could not find what you were looking for.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Please contact the owner of the site that linked you to the original URL and let them know their link is broken.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Main",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "On this page",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "One min read|{readingTime} min read",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Toggle word wrap",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Read more",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "Read more about {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Copy",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Copied",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Copy code to clipboard",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Home page",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Docs sidebar",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Collapse sidebar",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Collapse sidebar",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "Expand the dropdown",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "Collapse the dropdown",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Back to main menu",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Close navigation bar",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Toggle navigation bar",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Expand sidebar",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Expand sidebar",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.SearchBar.noResultsText": {
+    "message": "No results"
+  },
+  "theme.SearchBar.seeAllOutsideContext": {
+    "message": "See all results outside \"{context}\""
+  },
+  "theme.SearchBar.searchInContext": {
+    "message": "See all results within \"{context}\""
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "See all results"
+  },
+  "theme.SearchBar.label": {
+    "message": "Search",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "Search results for \"{query}\"",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "Search the documentation",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.searchContext.everywhere": {
+    "message": "Everywhere"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "1 document found|{count} documents found",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "No documents were found",
+    "description": "The paragraph for empty search result"
+  },
+  "theme.blog.post.plurals": {
+    "message": "One post|{count} posts",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} tagged with \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "Authors",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "View all authors",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "This author has not written any posts yet.",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "Unlisted page",
+    "description": "The unlisted content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "Draft page",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "This page is a draft. It will only be visible in dev and be excluded from the production build.",
+    "description": "The draft content banner message"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Try again",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Skip to main content",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Tags",
+    "description": "The title of the tag list page"
+  },
+  "homepage.hero.sample.partner_02": {
+    "message": "What's something\nyou've wanted to tell me\nbut haven't?"
+  },
+  "homepage.hero.sample.stranger_07": {
+    "message": "What topic gets you excited the moment it comes up?"
+  },
+  "homepage.hero.sample.family_05": {
+    "message": "What's something about you you wish I knew?"
+  },
+  "homepage.hero.sample.friend_05": {
+    "message": "If you could say one thing to yourself five years ago, what would it be?"
+  },
+  "homepage.hero.sample.dating_01": {
+    "message": "What have you been obsessed with lately?"
+  },
+  "homepage.hero.sample.household_06": {
+    "message": "Do you think the way we split the housework is fair?"
+  },
+  "homepage.hero.sample.parenting_11": {
+    "message": "When things get hard, how would you like me to help?"
+  },
+  "homepage.hero.sample.upward_10": {
+    "message": "What did the best manager you ever had do right?"
+  },
+  "homepage.hero.card.ariaLabel": {
+    "message": "Draw another card"
+  },
+  "homepage.hero.card.hint": {
+    "message": "Tap the card for another question"
+  },
+  "homepage.hero.sample.colleague_19": {
+    "message": "Is there anything on your desk with a story behind it?"
+  },
+  "homepage.hero.sample.subordinate_11": {
+    "message": "What would you tell me if you knew it was safe to?"
+  },
+  "homepage.hero.sample.sibling_17": {
+    "message": "Which of us got in trouble more?"
+  },
+  "homepage.hero.sample.reflection_13": {
+    "message": "What part of yourself are you most afraid people will see?"
+  }
+}

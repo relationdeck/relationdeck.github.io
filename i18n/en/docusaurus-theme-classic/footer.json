@@ -1,0 +1,70 @@
+{
+  "link.title.產品": {
+    "message": "Product",
+    "description": "The title of the footer links column with title=產品 in the footer"
+  },
+  "link.title.社群": {
+    "message": "Community",
+    "description": "The title of the footer links column with title=社群 in the footer"
+  },
+  "link.title.下載 App": {
+    "message": "Get the app",
+    "description": "The title of the footer links column with title=下載 App in the footer"
+  },
+  "link.title.聯絡": {
+    "message": "Contact",
+    "description": "The title of the footer links column with title=聯絡 in the footer"
+  },
+  "link.title.語言": {
+    "message": "Language",
+    "description": "The title of the footer links column with title=語言 in the footer"
+  },
+  "link.item.label.最新文章": {
+    "message": "Blog",
+    "description": "The label of footer link with label=最新文章 linking to /blog"
+  },
+  "link.item.label.關於我們": {
+    "message": "About",
+    "description": "The label of footer link with label=關於我們 linking to /about"
+  },
+  "link.item.label.隱私權政策": {
+    "message": "Privacy policy",
+    "description": "The label of footer link with label=隱私權政策 linking to /privacy"
+  },
+  "link.item.label.支援": {
+    "message": "Support",
+    "description": "The label of footer link with label=支援 linking to /support"
+  },
+  "link.item.label.Facebook 社群": {
+    "message": "Facebook group",
+    "description": "The label of footer link with label=Facebook 社群 linking to https://facebook.com/groups/relationdeck"
+  },
+  "link.item.label.Instagram": {
+    "message": "Instagram",
+    "description": "The label of footer link with label=Instagram linking to https://www.instagram.com/relationdeck"
+  },
+  "link.item.label.Facebook 粉絲專頁": {
+    "message": "Facebook page",
+    "description": "The label of footer link with label=Facebook 粉絲專頁 linking to https://www.facebook.com/relationdeck"
+  },
+  "link.item.label.App Store": {
+    "message": "App Store",
+    "description": "The label of footer link with label=App Store linking to https://apps.apple.com/tw/app/relationdeck-%E9%97%9C%E4%BF%82%E7%9B%92%E5%AD%90/id6804240926"
+  },
+  "link.item.label.Google Play（即將上架）": {
+    "message": "Google Play (coming soon)",
+    "description": "The label of footer link with label=Google Play（即將上架） linking to /#download"
+  },
+  "link.item.label.聯絡信箱": {
+    "message": "Email us",
+    "description": "The label of footer link with label=聯絡信箱 linking to mailto:relationdeck@gmail.com"
+  },
+  "link.item.label.語言": {
+    "message": "Language",
+    "description": "The label of footer link with label=語言 linking to /"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 RelationDeck 關係盒子, Inc. Built with ❤️ by <a href=\"https://www.kdchang.com\">KD Chang</a> in Taiwan.",
+    "description": "The footer copyright"
+  }
+}

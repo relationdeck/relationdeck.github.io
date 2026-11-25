@@ -158,3 +158,25 @@ body {
 .table-of-contents__link--active {
   font-weight: 600;
 }
+
+/* 右上角的語言選單只留地球圖示，見 src/theme/NavbarItem/LocaleDropdownNavbarItem。
+   連結的 font-size 是 0，若外層照預設的 inline-block 排，連結會貼著文字基線而偏下；
+   外層改成 flex 才能和其他導覽項目垂直置中。 */
+.navbar__item.dropdown:has(> .navbar__locale) {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__link.navbar__locale {
+  font-size: 0;
+  display: inline-flex;
+  align-items: center;
+}
+
+.navbar__link.navbar__locale svg {
+  margin-right: 0;
+}
+
+.navbar__link.navbar__locale::after {
+  font-size: 1rem;
+}

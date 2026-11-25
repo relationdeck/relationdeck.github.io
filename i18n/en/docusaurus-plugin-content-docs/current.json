@@ -1,0 +1,14 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.resourceSidebar.category.十二副牌": {
+    "message": "Twelve decks",
+    "description": "The label for category '十二副牌' in sidebar 'resourceSidebar'"
+  },
+  "sidebar.resourceSidebar.category.十二副牌.link.generated-index.description": {
+    "message": "When to use each deck, sample questions, and tips.",
+    "description": "The generated-index page description for category '十二副牌' in sidebar 'resourceSidebar'"
+  }
+}

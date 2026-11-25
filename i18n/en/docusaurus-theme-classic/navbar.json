@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "RelationDeck",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "RelationDeck",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.最新文章": {
+    "message": "Blog",
+    "description": "Navbar item with label 最新文章"
+  },
+  "item.label.關於我們": {
+    "message": "About",
+    "description": "Navbar item with label 關於我們"
+  },
+  "item.label.加入社群": {
+    "message": "Community",
+    "description": "Navbar item with label 加入社群"
+  },
+  "item.label.下載 App": {
+    "message": "Get the app",
+    "description": "Navbar item with label 下載 App"
+  }
+}

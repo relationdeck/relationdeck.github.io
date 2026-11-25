@@ -116,13 +116,18 @@
   text-decoration: none;
 }
 
-/* Two stacked cards, drawn after the logo */
-.heroVisual {
-  position: relative;
-  height: 380px;
+/* Two stacked cards, drawn after the logo. The front one is a button that
+   flips to the next sample question (HeroCard in index.tsx). */
+.heroStage {
   max-width: 400px;
   width: 100%;
   justify-self: start;
+}
+
+.heroVisual {
+  position: relative;
+  height: 380px;
+  width: 100%;
 }
 
 .cardBack,
@@ -131,7 +136,6 @@
   width: 62%;
   aspect-ratio: 5 / 7;
   border-radius: 14px;
-  box-shadow: 10px 10px 0 var(--rd-shadow);
 }
 
 /* The front card covers the back card's lower-left, so the mark sits in the
@@ -145,6 +149,7 @@
   justify-content: flex-end;
   padding: 1.5rem 1.4rem;
   color: rgba(255, 255, 255, 0.9);
+  box-shadow: 10px 10px 0 var(--rd-shadow);
 }
 
 .cardBack::before {
@@ -158,11 +163,74 @@
 .cardFront {
   bottom: 0;
   left: 4%;
-  background: var(--rd-rose);
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
   color: var(--rd-ink);
-  padding: 1.5rem 1.4rem;
+  text-align: left;
+  cursor: pointer;
+  perspective: 1200px;
+  -webkit-tap-highlight-color: transparent;
+  transition: translate 0.2s ease;
+}
+
+.cardFront:focus-visible {
+  outline: 2px solid var(--rd-ink);
+  outline-offset: 6px;
+}
+
+.cardInner {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+/* 兩面各帶自己的影子，翻到一半時影子跟著卡片一起變窄。B 面自己轉了半圈、
+   外層又轉半圈，加起來是一整圈，所以影子方向跟 A 面一樣。 */
+.cardFace {
+  position: absolute;
+  inset: 0;
   display: flex;
   flex-direction: column;
+  padding: 1.5rem 1.4rem;
+  border-radius: 14px;
+  background: var(--rd-rose);
+  box-shadow: 10px 10px 0 var(--rd-shadow);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transition: box-shadow 0.2s ease;
+}
+
+.cardFaceB {
+  transform: rotateY(180deg);
+}
+
+@media (hover: hover) {
+  .cardFront:hover {
+    translate: -3px -3px;
+  }
+
+  .cardFront:hover .cardFace {
+    box-shadow: 13px 13px 0 var(--rd-shadow);
+  }
+}
+
+.cardFront:active {
+  translate: 2px 2px;
+}
+
+.cardFront:active .cardFace {
+  box-shadow: 7px 7px 0 var(--rd-shadow);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cardFront,
+  .cardInner,
+  .cardFace {
+    transition: none;
+  }
 }
 
 .cardMeta {
@@ -182,6 +250,8 @@
   font-size: 1.2rem;
   font-weight: 600;
   line-height: 1.6;
+  white-space: pre-line;
+  text-wrap: balance;
 }
 
 .cardBrand {
@@ -190,6 +260,21 @@
   letter-spacing: 0.12em;
   text-transform: uppercase;
   opacity: 0.6;
+}
+
+.cardHint {
+  margin: 1.4rem 0 0 4%;
+  font-size: 0.85rem;
+  color: var(--rd-muted);
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
 }
 
 /* ── Facts ── */
@@ -475,6 +560,17 @@
   color: var(--rd-muted);
 }
 
+.storeLink {
+  text-decoration: none;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.storeLink:hover {
+  border-color: var(--rd-ink);
+  color: var(--rd-ink);
+  text-decoration: none;
+}
+
 /* ── Newsletter ── */
 .newsletterInner {
   display: grid;
@@ -548,10 +644,13 @@
     gap: 2.5rem;
   }
 
-  .heroVisual {
+  .heroStage {
     justify-self: center;
-    height: 320px;
     max-width: 340px;
+  }
+
+  .heroVisual {
+    height: 320px;
   }
 
   .deckGrid {

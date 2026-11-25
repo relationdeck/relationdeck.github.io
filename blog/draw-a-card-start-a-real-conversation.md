@@ -108,8 +108,9 @@ description: 很多對話停在「最近好嗎」，不是因為沒話可說，�
 
 ---
 
-RelationDeck 關係盒子即將上架 App Store 與 Google Play。想在上架時收到通知，可以訂閱我們的電子報。
+RelationDeck 關係盒子已在 App Store 上架，Android 版即將上架 Google Play。想在 Android 版上架時收到通知，可以訂閱我們的電子報。
 
+- [App Store 下載](https://apps.apple.com/tw/app/relationdeck-%E9%97%9C%E4%BF%82%E7%9B%92%E5%AD%90/id6804240926)
 - [訂閱電子報](https://relationdeck.substack.com/)
 - [Facebook 社群](https://facebook.com/groups/relationdeck)
 - [Instagram](https://www.instagram.com/relationdeck)
